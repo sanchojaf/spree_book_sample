@@ -1,9 +1,7 @@
-#Spree::Sample.load_sample("products")
-#Spree::Sample.load_sample("variants")
+Spree::Sample.load_sample("products")
+Spree::Sample.load_sample("variants")
 
 products = {}
-
-
 products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey") 
 products[:ror_tote] = Spree::Product.find_by_name!("Ruby on Rails Tote")
 products[:ror_bag] = Spree::Product.find_by_name!("Ruby on Rails Bag")
@@ -21,11 +19,8 @@ products[:spree_bag] = Spree::Product.find_by_name!("Spree Bag")
 products[:ruby_baseball_jersey] = Spree::Product.find_by_name!("Ruby Baseball Jersey")
 products[:apache_baseball_jersey] = Spree::Product.find_by_name!("Apache Baseball Jersey")
 
-user_1 = Spree::User.where(:email => "spree@example.com")[0]
-user_2 = Spree::User.where(:email => "jack@g.com")[0]
-user_3 = Spree::User.where(:email => "sa@g.com")[0]
 
-def image(name, type="jpg")
+def image(name, type="jpeg")
   images_path = Pathname.new(File.dirname(__FILE__)) + "images"
   path = images_path + "#{name}.#{type}"
   return false if !File.exist?(path)
@@ -85,12 +80,12 @@ images = {
   ],
   products[:apache_baseball_jersey].master => [
     {
-      :attachment => image("apache_baseball", "jpg")
+      :attachment => image("apache_baseball", "png")
     },
   ],
   products[:ruby_baseball_jersey].master => [
     {
-      :attachment => image("ruby_baseball", "jpg")
+      :attachment => image("ruby_baseball", "png")
     },
   ],
   products[:spree_bag].master => [
@@ -145,42 +140,20 @@ images = {
   ],
 }
 
-#products[:ror_baseball_jersey].variants.each do |variant|
-#  color = variant.option_value("tshirt-color").downcase
-#  main_image = image("ror_baseball_jersey_#{color}", "jpg")
-#  variant.images.create!(:attachment => main_image)
-#  back_image = image("ror_baseball_jersey_back_#{color}", "jpg")
-#  if back_image
-#    variant.images.create!(:attachment => back_image)
-#  end
-#end
-
 products[:ror_baseball_jersey].variants.each do |variant|
-  meal_plan = variant.option_value("meal-plan").downcase
-  main_image = image("ror_baseball_jersey_#{meal_plan}", "jpg")
+  color = variant.option_value("tshirt-color").downcase
+  main_image = image("ror_baseball_jersey_#{color}", "png")
   variant.images.create!(:attachment => main_image)
-  back_image = image("ror_baseball_jersey_back_#{meal_plan}", "jpg")
+  back_image = image("ror_baseball_jersey_back_#{color}", "png")
   if back_image
     variant.images.create!(:attachment => back_image)
   end
 end
 
 images.each do |variant, attachments|
-  puts "Loading images for #{variant.name}"
+  puts "Loading images for #{variant.product.name}"
   attachments.each do |attachment|
     variant.images.create!(attachment)
   end
 end
-
-puts "Loading images for user 1"
-user_1.icon = image("user_1")
-user_1.save
-
-puts "Loading images for user 2"
-user_2.icon = image("user_2")
-user_2.save
-
-puts "Loading images for user 3"
-user_3.icon = image("user_3")
-user_3.save
 

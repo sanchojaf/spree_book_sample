@@ -54,3 +54,4 @@ Spree::ShippingMethod.create!([
   shipping_method.calculator.preferred_currency = currency
   shipping_method.save!
 end
+
