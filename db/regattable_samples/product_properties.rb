@@ -1,6 +1,6 @@
 products =
   { 
-    "Ruby on Rails Baseball Jersey" => 
+    "FC-16" => 
     { 
       "Manufacturer" => "Wilson",
       "Brand" => "Wannabe Sports",
