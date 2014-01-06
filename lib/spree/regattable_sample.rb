@@ -10,7 +10,7 @@ module Spree
     end
 
     private
-      def self.samples_regattable_path
+      def self.regattable_samples_path
         Pathname.new(File.join(File.dirname(__FILE__), '..', '..', 'db', 'regattable_samples'))
       end
   end
