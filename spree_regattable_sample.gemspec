@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
   s.author      = 'Miguel Sancho'
   s.email       = 'sanchojaf@gmail.com'
-  s.homepage    = 'github.com/sanchojaf/spree_regattable_sample'
+  s.homepage    = 'https://github.com/sanchojaf/spree_regattable_sample'
   s.license     = %q{BSD-3}
 
   s.files        = Dir['LICENSE', 'README.md', 'lib/**/*', 'db/**/*']
