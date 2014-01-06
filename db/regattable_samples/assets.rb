@@ -2,7 +2,7 @@
 #Spree::Sample.load_sample("variants")
 
 products = {}
-products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey") 
+products[:ror_baseball_jersey] = Spree::Product.find_by_name!("FC-16") 
 products[:ror_tote] = Spree::Product.find_by_name!("Ruby on Rails Tote")
 products[:ror_bag] = Spree::Product.find_by_name!("Ruby on Rails Bag")
 products[:ror_jr_spaghetti] = Spree::Product.find_by_name!("Ruby on Rails Jr. Spaghetti")

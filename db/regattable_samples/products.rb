@@ -25,7 +25,7 @@ products = [
     :eur_price => 19,
   },
   {
-    :name => "Ruby on Rails Baseball Jersey",
+    :name => "FC-16",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
