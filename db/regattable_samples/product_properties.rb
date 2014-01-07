@@ -2,14 +2,24 @@ products =
   { 
     "FC-16" => 
     { 
-      "Manufacturer" => "Wilson",
-      "Brand" => "Wannabe Sports",
-      "Model" => "JK1002",
-      "Shirt Type" => "Baseball Jersey",
-      "Sleeve Type" => "Long",
-      "Made from" => "100% cotton",
-      "Fit" => "Loose",
-      "Gender" => "Men's"
+#      "Manufacturer" => "Wilson",
+#      "Brand" => "Wannabe Sports",
+#      "Model" => "JK1002",
+#      "Shirt Type" => "Baseball Jersey",
+#      "Sleeve Type" => "Long",
+#      "Made from" => "100% cotton",
+#      "Fit" => "Loose",
+#      "Gender" => "Men's"
+      "LOA" => "1",
+      "Beam" => "2",
+      "Mast height" => "3",
+      "Main sail area" => "4",
+      "Jib Sail Area" => "5",
+      "Max Speed (knots and MPH)" => "40",
+      "Max Capacity" => "4",
+      "Boat weight" => "6ft",
+      "Suitcase weight" => "34kg",
+
     },
     "Ruby on Rails Jr. Spaghetti" =>
     {
