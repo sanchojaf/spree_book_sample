@@ -63,7 +63,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -79,7 +79,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -103,7 +103,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 22.99,
-    :eur_price => 19
+    :eur_price => 19,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -117,7 +117,7 @@ products = [
     :name => "Ruby on Rails Stein",
     :shipping_category => shipping_category,
     :price => 16.99,
-    :eur_price => 14
+    :eur_price => 14,
     :description => Faker::Lorem.paragraph,
   },
   {
