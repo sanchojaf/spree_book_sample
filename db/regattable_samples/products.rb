@@ -38,7 +38,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
 
   },
@@ -47,7 +47,7 @@ products = [
     :shipping_category => shipping_category,
     :tax_category => clothing,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -55,7 +55,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -71,7 +71,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -87,7 +87,7 @@ products = [
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 19.99,
-    :eur_price => 16
+    :eur_price => 16,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -110,7 +110,7 @@ products = [
     :name => "Ruby on Rails Mug",
     :shipping_category => shipping_category,
     :price => 13.99,
-    :eur_price => 12
+    :eur_price => 12,
     :description => Faker::Lorem.paragraph,
   },
   {
@@ -131,7 +131,7 @@ products = [
     :name => "Spree Mug",
     :shipping_category => shipping_category,
     :price => 13.99,
-    :eur_price => 12
+    :eur_price => 12,
     :description => Faker::Lorem.paragraph,
   }
 ]
