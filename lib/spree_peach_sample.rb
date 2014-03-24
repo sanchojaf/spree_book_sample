@@ -26,6 +26,7 @@ module SpreePeachSample
       Spree::PeachSample.load_peach_sample("orders")
       Spree::PeachSample.load_peach_sample("adjustments")
       Spree::PeachSample.load_peach_sample("payments")
+      Spree::PeachSample.load_peach_sample("store")
     end
   end
 end
