@@ -6,8 +6,8 @@ seller_store = Spree::Store.create! name: 'seller-website', code: 'seller', defa
                                     domains: 'seller.lvh.me:3000'
   
 if Rails.env == "production"
-  seller_store.domains = 'seller.tablet-peach.herokuapp.com' 
-  customer_store.domains = 'customer.tablet-peach.herokuapp.com'
+  seller_store.domains = 'seller-peach.openjaf.com' 
+  customer_store.domains = 'customer-peach.openjaf.com'
 end
 seller_store.save
 customer_store.save
