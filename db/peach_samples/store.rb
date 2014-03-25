@@ -6,11 +6,12 @@ seller_store = Spree::Store.create! name: 'seller-website', code: 'seller', defa
                                     domains: 'seller.lvh.me:3000'
   
 if Rails.env == "production"
-  seller_store.domains = 'seller-peach.openjaf.com' 
-  customer_store.domains = 'customer-peach.openjaf.com'
+  customer_store.domains = 'www.customer-peach.openjaf.com'
+  seller_store.domains = 'www.seller-peach.openjaf.com' 
 end
-seller_store.save
+
 customer_store.save
+seller_store.save
 
 Spree::Product.all.each do |p|
   p.stores << [customer_store, seller_store]
