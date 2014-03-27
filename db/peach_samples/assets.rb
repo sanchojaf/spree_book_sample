@@ -2,22 +2,22 @@
 #Spree::Sample.load_sample("variants")
 
 products = {}
-products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey") #Full
-products[:ror_tote] = Spree::Product.find_by_name!("Ruby on Rails Tote") #Plunge
-products[:ror_bag] = Spree::Product.find_by_name!("Ruby on Rails Bag") #Sleeveless Tee
-products[:ror_jr_spaghetti] = Spree::Product.find_by_name!("Ruby on Rails Jr. Spaghetti") #Spaghetti Strap Cami
-products[:ror_mug] = Spree::Product.find_by_name!("Ruby on Rails Mug") #Bikini
-products[:ror_ringer] = Spree::Product.find_by_name!("Ruby on Rails Ringer T-Shirt") #Ribbed-knit tank
-products[:ror_stein] = Spree::Product.find_by_name!("Ruby on Rails Stein") #Thong
-products[:spree_baseball_jersey] = Spree::Product.find_by_name!("Spree Baseball Jersey") #Flyaway jacket
-products[:spree_stein] = Spree::Product.find_by_name!("Spree Stein") #Girlshort
-products[:spree_jr_spaghetti] = Spree::Product.find_by_name!("Spree Jr. Spaghetti") #Scoop Neck Cami
-products[:spree_mug] = Spree::Product.find_by_name!("Spree Mug") #Brief
-products[:spree_ringer] = Spree::Product.find_by_name!("Spree Ringer T-Shirt") #Everyday jacket
-products[:spree_tote] = Spree::Product.find_by_name!("Spree Tote") #Relaxed legging
-products[:spree_bag] = Spree::Product.find_by_name!("Spree Bag") #Everyday pant
-products[:ruby_baseball_jersey] = Spree::Product.find_by_name!("Ruby Baseball Jersey") #Wrap chemise
-products[:apache_baseball_jersey] = Spree::Product.find_by_name!("Apache Baseball Jersey") #Wrap Cami
+products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Full") #Ruby on Rails Baseball Jersey
+products[:ror_tote] = Spree::Product.find_by_name!("Plunge") #Ruby on Rails Tote
+products[:ror_bag] = Spree::Product.find_by_name!("Sleeveless Tee") #Ruby on Rails Bag
+products[:ror_jr_spaghetti] = Spree::Product.find_by_name!("Spaghetti Strap Cami") #Ruby on Rails Jr. Spaghetti
+products[:ror_mug] = Spree::Product.find_by_name!("Bikini") #Ruby on Rails Mug
+products[:ror_ringer] = Spree::Product.find_by_name!("Ribbed-knit Tank") #Ruby on Rails Ringer T-Shirt
+products[:ror_stein] = Spree::Product.find_by_name!("Thong") #Ruby on Rails Stein
+products[:spree_baseball_jersey] = Spree::Product.find_by_name!("Flyaway Jacket") #Spree Baseball Jersey
+products[:spree_stein] = Spree::Product.find_by_name!("Girlshort") #Spree Stein
+products[:spree_jr_spaghetti] = Spree::Product.find_by_name!("Scoop Neck Cami") #Spree Jr. Spaghetti
+products[:spree_mug] = Spree::Product.find_by_name!("Brief") #Spree Mug
+products[:spree_ringer] = Spree::Product.find_by_name!("Everyday Jacket") #Spree Ringer T-Shirt
+products[:spree_tote] = Spree::Product.find_by_name!("Relaxed Legging") #Spree Tote
+products[:spree_bag] = Spree::Product.find_by_name!("Everyday Pant") #Spree Bag
+products[:ruby_baseball_jersey] = Spree::Product.find_by_name!("Wrap Chemise") #Ruby Baseball Jersey
+products[:apache_baseball_jersey] = Spree::Product.find_by_name!("Wrap Cami") #Apache Baseball Jersey
 
 
 def image(name, type="jpg")

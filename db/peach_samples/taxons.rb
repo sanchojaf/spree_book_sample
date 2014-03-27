@@ -65,7 +65,7 @@ taxons = [
     :parent => "Categories",
     :position => 3,
     :products => [
-      products[:spaghetti_cami], 
+      products[:spaghetti_strap_cami], 
       products[:scoop_neck_cami],
       products[:sleeveless_tee], 
       products[:wrap_cami], 
