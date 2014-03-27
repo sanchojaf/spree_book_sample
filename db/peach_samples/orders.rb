@@ -1,19 +1,3 @@
-  :ror_tote => "Ruby on Rails Tote", #Plunge
-  :ror_bag => "Ruby on Rails Bag", #Sleeveless Tee
-  :ror_mug => "Ruby on Rails Mug", #Bikini
-  :ror_stein => "Ruby on Rails Stein", #Thong
-  :ror_baseball_jersey => "FC-16", #Full  
-  :ror_jr_spaghetti => "Ruby on Rails Jr. Spaghetti", #Spaghetti Strap Cami
-  :ror_ringer => "Ruby on Rails Ringer T-Shirt", #Ribbed-knit tank
-  :spree_stein => "Spree Stein", #Girlshort
-  :spree_mug => "Spree Mug", #Brief
-  :spree_ringer => "Spree Ringer T-Shirt", #Everyday jacket
-  :spree_baseball_jersey =>  "Spree Baseball Jersey", #Flyaway jacket
-  :spree_tote => "Spree Tote", #Relaxed legging
-  :spree_bag => "Spree Bag", #Everyday pant
-  :spree_jr_spaghetti => "Spree Jr. Spaghetti", #Scoop Neck Cami
-  :apache_baseball_jersey => "Apache Baseball Jersey", #Wrap Cami
-  :ruby_baseball_jersey => "Ruby Baseball Jersey", #Wrap chemise
 
 
 Spree::Sample.load_sample("addresses")
