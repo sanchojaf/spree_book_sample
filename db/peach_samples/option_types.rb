@@ -10,3 +10,5 @@ Spree::OptionType.create!([
     :position => 2
   }
 ])
+
+puts "option_types ///////////// #{Spree::OptionType.all}"
