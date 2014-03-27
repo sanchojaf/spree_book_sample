@@ -14,7 +14,7 @@ Spree::OptionValue.create!([
     :name => "S",
     :presentation => "S",
     :position => 2,
-    :option_type =>size
+    :option_type => size
   },
   {
     :name => "M",
@@ -76,6 +76,7 @@ Spree::OptionValue.create!([
     :position => 6,
     :option_type => color
   },
+  {
     :name => "Blossom",
     :presentation => "Blossom",
     :position => 7,
@@ -92,5 +93,5 @@ Spree::OptionValue.create!([
     :presentation => "Lilac",
     :position => 9,
     :option_type => color
-  },
+  }
 ])
