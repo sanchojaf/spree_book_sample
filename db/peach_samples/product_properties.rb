@@ -1,6 +1,5 @@
 products =
-  { 
-   
+  {    
     "Full" => 
     { 
       "Manufacturer" => "Wilson",
@@ -40,14 +39,12 @@ products =
       "Size" => %Q{15" x 18" x 6"},
       "Material" => "Canvas"
     },
-    
     "Sleeveless Tee" => 
     {
       "Type" => "Messenger",
       "Size" => %Q{14 1/2" x 12" x 5"},
       "Material" => "600 Denier Polyester"
     },
-    
     "Bikini" => 
     {
       "Type" => "Mug",
@@ -58,31 +55,26 @@ products =
       "Type" => "Stein",
       "Size" => %Q{6.75" tall, 3.75" dia. base, 3" dia. rim}
     },
-   
     "Girlshort" =>
     {
       "Type" => "Stein",
       "Size" => %Q{6.75" tall, 3.75" dia. base, 3" dia. rim}
     },
-    
     "Brief" => 
     {
       "Type" => "Mug",
       "Size" => %Q{4.5" tall, 3.25" dia.}
     },
-    
     "Relaxed Legging" => 
     {
       "Type" => "Tote",
       "Size" => %Q{15" x 18" x 6"}
     },
-    
-    "Everyday pant" => 
+    "Everyday Pant" => 
     {
       "Type" => "Messenger",
       "Size" => %Q{14 1/2" x 12" x 5"}
     },
-
     "Flyaway Jacket" =>
     {
       "Manufacturer" => "Wilson",
@@ -94,7 +86,6 @@ products =
       "Fit" => "Loose",
       "Gender" => "Men's"
     },
-
     "Scoop Neck Cami" =>
     {
       "Manufacturer" => "Jerseys",
@@ -106,7 +97,6 @@ products =
       "Fit" => "Form",
       "Gender" => "Women's"
     },
- 
     "Everyday Jacket" =>
     {
       "Manufacturer" => "Jerseys",
@@ -118,7 +108,6 @@ products =
       "Fit" => "Loose",
       "Gender" => "Men's"
     },
-
     "Wrap Cami" =>
     {
       "Manufacturer" => "Jerseys",
@@ -130,7 +119,6 @@ products =
       "Fit" => "Loose",
       "Gender" => "Men's"
     },
-   
     "Wrap Chemise" =>
     {
       "Manufacturer" => "Jerseys",
@@ -145,6 +133,7 @@ products =
   }
 
 products.each do |name, properties|
+  puts "////////////////// product name: #{name}"
   product = Spree::Product.find_by_name(name)
   properties.each do |prop_name, prop_value|
     product.set_property(prop_name, prop_value)
