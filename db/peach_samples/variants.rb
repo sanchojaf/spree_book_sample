@@ -1,161 +1,85 @@
 #Spree::Sample.load_sample("option_values")
 #Spree::Sample.load_sample("products")
 
-ror_baseball_jersey = Spree::Product.find_by_name!("FC-16")
-ror_tote = Spree::Product.find_by_name!("Ruby on Rails Tote")
-ror_bag = Spree::Product.find_by_name!("Ruby on Rails Bag")
-ror_jr_spaghetti = Spree::Product.find_by_name!("Ruby on Rails Jr. Spaghetti")
-ror_mug = Spree::Product.find_by_name!("Ruby on Rails Mug")
-ror_ringer = Spree::Product.find_by_name!("Ruby on Rails Ringer T-Shirt")
-ror_stein = Spree::Product.find_by_name!("Ruby on Rails Stein")
-spree_baseball_jersey = Spree::Product.find_by_name!("Spree Baseball Jersey")
-spree_stein = Spree::Product.find_by_name!("Spree Stein")
-spree_jr_spaghetti = Spree::Product.find_by_name!("Spree Jr. Spaghetti")
-spree_mug = Spree::Product.find_by_name!("Spree Mug")
-spree_ringer = Spree::Product.find_by_name!("Spree Ringer T-Shirt")
-spree_tote = Spree::Product.find_by_name!("Spree Tote")
-spree_bag = Spree::Product.find_by_name!("Spree Bag")
-ruby_baseball_jersey = Spree::Product.find_by_name!("Ruby Baseball Jersey")
-apache_baseball_jersey = Spree::Product.find_by_name!("Apache Baseball Jersey")
+full = Spree::Product.find_by_name!("Full") # Ruby on Rails Baseball Jersey
+plunge = Spree::Product.find_by_name!("Plunge") #Ruby on Rails Tote
+sleeveless_tee = Spree::Product.find_by_name!("Sleeveless Tee") #Ruby on Rails Bag
+spaghetti_strap_cami = Spree::Product.find_by_name!("Spaghetti Strap Cami") #Ruby on Rails Jr. Spaghetti
+bikini = Spree::Product.find_by_name!("Bikini") #Ruby on Rails Mug
+ribbed_knit_tank = Spree::Product.find_by_name!("Ribbed-knit Tank") # Ruby on Rails Ringer T-Shirt
+thong = Spree::Product.find_by_name!("Thong") #Ruby on Rails Stein
+flyaway_jacket = Spree::Product.find_by_name!("Flyaway Jacket") #Spree Baseball Jersey
+girlshort = Spree::Product.find_by_name!("Girlshort") #Spree Stein
+scoop_neck_cami = Spree::Product.find_by_name!("Scoop Neck Cami") #Spree Jr. Spaghetti
+brief = Spree::Product.find_by_name!("Brief") #Spree Mug
+everyday_jacket = Spree::Product.find_by_name!("Everyday Jacket") #Spree Ringer T-Shirt
+relaxed_legging = Spree::Product.find_by_name!("Relaxed Legging") #Spree Tote
+everyday_pant = Spree::Product.find_by_name!("Everyday Pant") #Spree Bag
+wrap_chemise = Spree::Product.find_by_name!("Wrap Chemise") #Ruby Baseball Jersey
+wrap_cami = Spree::Product.find_by_name!("Wrap Cami") #Apache Baseball Jersey
 
-small = Spree::OptionValue.find_by_name!("Small")
-medium = Spree::OptionValue.find_by_name!("Medium")
-large = Spree::OptionValue.find_by_name!("Large")
-extra_large = Spree::OptionValue.find_by_name!("Extra Large")
 
-red = Spree::OptionValue.find_by_name!("Red")
-blue = Spree::OptionValue.find_by_name!("Blue")
-green = Spree::OptionValue.find_by_name!("Green")
+xs = Spree::OptionValue.find_by_name!("XS")
+s = Spree::OptionValue.find_by_name!("S")
+m = Spree::OptionValue.find_by_name!("M")
+l = Spree::OptionValue.find_by_name!("L")
+xl = Spree::OptionValue.find_by_name!("XL")
+xxl = Spree::OptionValue.find_by_name!("XXL")
 
-variants = [
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [small, red],
-    :sku => "ROR-00001",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [small, blue],
-    :sku => "ROR-00002",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [small, green],
-    :sku => "ROR-00003",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [medium, red],
-    :sku => "ROR-00004",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [medium, blue],
-    :sku => "ROR-00005",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [medium, green],
-    :sku => "ROR-00006",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [large, red],
-    :sku => "ROR-00007",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [large, blue],
-    :sku => "ROR-00008",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [large, green],
-    :sku => "ROR-00009",
-    :cost_price => 17
-  },
-  {
-    :product => ror_baseball_jersey,
-    :option_values => [extra_large, green],
-    :sku => "ROR-00012",
-    :cost_price => 17
-  },
-]
+black = Spree::OptionValue.find_by_name!("Black")
+natural = Spree::OptionValue.find_by_name!("Natural")
+white = Spree::OptionValue.find_by_name!("White")
+cream = Spree::OptionValue.find_by_name!("Cream")
+gray = Spree::OptionValue.find_by_name!("Gray")
+heater_grey = Spree::OptionValue.find_by_name!("Heater Grey")
+blossom = Spree::OptionValue.find_by_name!("Blossom")
+eggplant = Spree::OptionValue.find_by_name!("Eggplant")
+lilac = Spree::OptionValue.find_by_name!("Lilac")
 
-masters = {
-  ror_baseball_jersey => {
-    :sku => "ROR-001",
-    :cost_price => 17,
-  },
-  ror_tote => {
-    :sku => "ROR-00011",
-    :cost_price => 17
-  },
-  ror_bag => {
-    :sku => "ROR-00012",
-    :cost_price => 21
-  },
-  ror_jr_spaghetti => {
-    :sku => "ROR-00013",
-    :cost_price => 17
-  },
-  ror_mug => {
-    :sku => "ROR-00014",
-    :cost_price => 11
-  },
-  ror_ringer => {
-    :sku => "ROR-00015",
-    :cost_price => 17
-  },
-  ror_stein => {
-    :sku => "ROR-00016",
-    :cost_price => 15
-  },
-  apache_baseball_jersey => {
-    :sku => "APC-00001",
-    :cost_price => 17
-  },
-  ruby_baseball_jersey => {
-    :sku => "RUB-00001",
-    :cost_price => 17
-  },
-  spree_baseball_jersey => {
-    :sku => "SPR-00001",
-    :cost_price => 17
-  },
-  spree_stein => {
-    :sku => "SPR-00016",
-    :cost_price => 15
-  },
-  spree_jr_spaghetti => {
-    :sku => "SPR-00013",
-    :cost_price => 17
-  },
-  spree_mug => {
-    :sku => "SPR-00014",
-    :cost_price => 11
-  },
-  spree_ringer => {
-    :sku => "SPR-00015",
-    :cost_price => 17
-  },
-  spree_tote => {
-    :sku => "SPR-00011",
-    :cost_price => 13
-  },
-  spree_bag => {
-    :sku => "SPR-00012",
-    :cost_price => 21
-  }
+sizes = [xs, s, m, l, xl, xxl]
+
+products = {
+  full                  => [black, natural],
+  plunge                => [black, natural], 
+  sleeveless_tee        => [black, white, gray, natural, cream, blossom, lilac, eggplant], 
+  spaghetti_strap_cami  => [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  bikini                => [black, natural, blossom, lilac, eggplant],
+  ribbed_knit_tank      => [black, white, heater_grey, natural, cream, blossom, lilac, eggplant], 
+  thong                 => [black, natural, blossom, lilac, eggplant], 
+  flyaway_jacket        => [black, gray],
+  girlshort             => [black, natural, blossom, lilac, eggplant],
+  scoop_neck_cami       => [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  brief                 => [black, natural, blossom, lilac, eggplant],
+  everyday_jacket       => [black, blossom],
+  relaxed_legging       => [black, gray],
+  everyday_pant         => [black, gray],
+  wrap_chemise          => [black, gray, blossom, eggplant],
+  wrap_cami             => [black, white, gray, blossom, lilac, eggplant]
 }
+
+varians = []
+masters = {}
+
+products.each do |product, colors|
+  colors.each do |color|
+    sizes.each do |size|
+
+      variants << {
+          :product => product, 
+          :option_values => [size, color],
+          :sku => "#{product.name.gsub(' ','_')}-#{size.position}-#{color.position}",
+          :cost_price => 10 + rand(90)
+        }
+
+      masters << {
+         product => { 
+          :sku => "#{product.name.gsub(' ','_')}",
+          :cost_price => 10 + rand(90)
+        }
+      }
+    end
+  end
+end
 
 Spree::Variant.create!(variants)
 

@@ -1,27 +1,18 @@
 products =
   { 
-    "FC-16" => 
+   
+    "Full" => 
     { 
-#      "Manufacturer" => "Wilson",
-#      "Brand" => "Wannabe Sports",
-#      "Model" => "JK1002",
-#      "Shirt Type" => "Baseball Jersey",
-#      "Sleeve Type" => "Long",
-#      "Made from" => "100% cotton",
-#      "Fit" => "Loose",
-#      "Gender" => "Men's"
-      "LOA" => "16 ft (4.88m)",
-      "Beam" => "8ft (2.44m)",
-      "Mast height" => "21’ 11” (6.68m)",
-      "Main sail area" => "106 ft² (9.84 m²)",
-      "Jib Sail area" => "49 ft² (4.55m²)",
-      "Estimated Max Speed" => "11+ knots (12.6MPH)",
-      "Max Capacity" => "(4 adults or 680 lbs.)",
-      "Estimated Boat weight" => "150 lbs.",
-      "Estimated Individual Suitcase weight" => "75-80 lbs.",
-
+      "Manufacturer" => "Wilson",
+      "Brand" => "Wannabe Sports",
+      "Model" => "JK1002",
+      "Shirt Type" => "Baseball Jersey",
+      "Sleeve Type" => "Long",
+      "Made from" => "100% cotton",
+      "Fit" => "Loose",
+      "Gender" => "Men's"
     },
-    "Ruby on Rails Jr. Spaghetti" =>
+    "Spaghetti Strap Cami" =>
     {
       "Manufacturer" => "Jerseys",
       "Brand" => "Resiliance",
@@ -32,7 +23,7 @@ products =
       "Fit" => "Form",
       "Gender" => "Women's"
     },
-    "Ruby on Rails Ringer T-Shirt" =>
+    "Ribbed-knit Tank" =>
     {
       "Manufacturer" => "Jerseys",
       "Brand" => "Conditioned",
@@ -43,49 +34,56 @@ products =
       "Fit" => "Loose",
       "Gender" => "Men's"
     },
-    "Ruby on Rails Tote" =>
+    "Plunge" =>  
     {
       "Type" => "Tote",
       "Size" => %Q{15" x 18" x 6"},
       "Material" => "Canvas"
     },
-    "Ruby on Rails Bag" =>
+    
+    "Sleeveless Tee" => 
     {
       "Type" => "Messenger",
       "Size" => %Q{14 1/2" x 12" x 5"},
       "Material" => "600 Denier Polyester"
     },
-    "Ruby on Rails Mug" => 
+    
+    "Bikini" => 
     {
       "Type" => "Mug",
       "Size" => %Q{4.5" tall, 3.25" dia.}
     },
-    "Ruby on Rails Stein" =>
+    "Thong" =>
     {
       "Type" => "Stein",
       "Size" => %Q{6.75" tall, 3.75" dia. base, 3" dia. rim}
     },
-    "Spree Stein" =>
+   
+    "Girlshort" =>
     {
       "Type" => "Stein",
       "Size" => %Q{6.75" tall, 3.75" dia. base, 3" dia. rim}
     },
-    "Spree Mug" => 
+    
+    "Brief" => 
     {
       "Type" => "Mug",
       "Size" => %Q{4.5" tall, 3.25" dia.}
     },
-    "Spree Tote" => 
+    
+    "Relaxed Legging" => 
     {
       "Type" => "Tote",
       "Size" => %Q{15" x 18" x 6"}
     },
-    "Spree Bag" => 
+    
+    "Everyday pant" => 
     {
       "Type" => "Messenger",
       "Size" => %Q{14 1/2" x 12" x 5"}
     },
-    "Spree Baseball Jersey" =>
+
+    "Flyaway Jacket" =>
     {
       "Manufacturer" => "Wilson",
       "Brand" => "Wannabe Sports",
@@ -96,7 +94,8 @@ products =
       "Fit" => "Loose",
       "Gender" => "Men's"
     },
-    "Spree Jr. Spaghetti" =>
+
+    "Scoop Neck Cami" =>
     {
       "Manufacturer" => "Jerseys",
       "Brand" => "Resiliance",
@@ -107,7 +106,32 @@ products =
       "Fit" => "Form",
       "Gender" => "Women's"
     },
-    "Spree Ringer T-Shirt" =>
+ 
+    "Everyday Jacket" =>
+    {
+      "Manufacturer" => "Jerseys",
+      "Brand" => "Conditioned",
+      "Model" => "TL9002",
+      "Shirt Type" => "Ringer T",
+      "Sleeve Type" => "Short",
+      "Made from" => "100% Vellum",
+      "Fit" => "Loose",
+      "Gender" => "Men's"
+    },
+
+    "Wrap Cami" =>
+    {
+      "Manufacturer" => "Jerseys",
+      "Brand" => "Conditioned",
+      "Model" => "TL9002",
+      "Shirt Type" => "Ringer T",
+      "Sleeve Type" => "Short",
+      "Made from" => "100% Vellum",
+      "Fit" => "Loose",
+      "Gender" => "Men's"
+    },
+   
+    "Wrap Chemise" =>
     {
       "Manufacturer" => "Jerseys",
       "Brand" => "Conditioned",

@@ -1,6 +1,6 @@
 taxonomies = [
   { :name => "Categories" },
-  { :name => "Brand" }
+  #{ :name => "Brand" }
 ]
 
 taxonomies.each do |taxonomy_attrs|

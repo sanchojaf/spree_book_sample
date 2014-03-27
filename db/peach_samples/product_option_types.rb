@@ -3,10 +3,11 @@
 size = Spree::OptionType.find_by_presentation!("Size")
 color = Spree::OptionType.find_by_presentation!("Color")
 
-ror_baseball_jersey = Spree::Product.find_by_name!("FC-16")
-ror_baseball_jersey.option_types = [size, color]
-ror_baseball_jersey.save!
+products = Spree::Product.all
 
-spree_baseball_jersey = Spree::Product.find_by_name!("Spree Baseball Jersey")
-spree_baseball_jersey.option_types = [size, color]
-spree_baseball_jersey.save!
+products.each do |product|
+  product.option_types = [size, color]
+  product.save!
+end
+
+

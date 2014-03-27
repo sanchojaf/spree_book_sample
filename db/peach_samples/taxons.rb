@@ -2,25 +2,27 @@ Spree::Sample.load_sample("taxonomies")
 #Spree::Sample.load_sample("products")
 
 categories = Spree::Taxonomy.find_by_name!("Categories")
-brands = Spree::Taxonomy.find_by_name!("Brand")
+#brands = Spree::Taxonomy.find_by_name!("Brand")
 
 products = { 
-  :ror_tote => "Ruby on Rails Tote",
-  :ror_bag => "Ruby on Rails Bag",
-  :ror_mug => "Ruby on Rails Mug",
-  :ror_stein => "Ruby on Rails Stein",
-  :ror_baseball_jersey => "FC-16",
-  :ror_jr_spaghetti => "Ruby on Rails Jr. Spaghetti",
-  :ror_ringer => "Ruby on Rails Ringer T-Shirt",
-  :spree_stein => "Spree Stein",
-  :spree_mug => "Spree Mug",
-  :spree_ringer => "Spree Ringer T-Shirt",
-  :spree_baseball_jersey =>  "Spree Baseball Jersey",
-  :spree_tote => "Spree Tote",
-  :spree_bag => "Spree Bag",
-  :spree_jr_spaghetti => "Spree Jr. Spaghetti",
-  :apache_baseball_jersey => "Apache Baseball Jersey",
-  :ruby_baseball_jersey => "Ruby Baseball Jersey",
+   #TODO Deni
+  :plunge => "Plunge", #Ruby on Rails Tote
+  :sleeveless_tee => "Sleeveless Tee", #Ruby on Rails Bag
+  :bikini => "Bikini", #Ruby on Rails Mug
+  :thong => "Thong", #Ruby on Rails Stein
+  :full => "Full", #  ror_baseball_jersey
+  :spaghetti_strap_cami => "Spaghetti Strap Cami", #Ruby on Rails Jr. Spaghetti
+  :ribbed_knit_tank => "Ribbed-knit Tank", #Ruby on Rails Ringer T-Shirt
+  :girlshort => "Girlshort", #Spree Stein
+  :brief => "Brief", #Spree Mug
+  :everyday_jacket => "Everyday Jacket", #Spree Ringer T-Shirt
+  :flyaway_jacket =>  "Flyaway Jacket", #Spree Baseball Jersey
+  :relaxed_legging => "Relaxed Legging", #Spree Tote
+  :everyday_pant => "Everyday Pant", #Spree Bag
+  :scoop_neck_cami => "Scoop Neck Cami", #Spree Jr. Spaghetti
+  :wrap_cami => "Wrap Cami", #Apache Baseball Jersey
+  :wrap_chemise => "Wrap Chemise", #Ruby Baseball Jersey
+
 }
 
 
@@ -33,109 +35,82 @@ taxons = [
     :name => "Categories",
     :taxonomy => categories,
     :position => 0
-  },
+  },   
   {
-    :name => "Bags",
+    :name => "Bras",
     :taxonomy => categories,
     :parent => "Categories",
     :position => 1,
     :products => [
-      products[:ror_tote],
-      products[:ror_bag],
-      products[:spree_tote],
-      products[:spree_bag]
+      products[:plunge],
+      products[:full] 
+      # TODO: add Demi
     ]
   },
   {
-    :name => "Mugs",
+    :name => " Panties",
     :taxonomy => categories,
     :parent => "Categories",
     :position => 2,
     :products => [
-      products[:ror_mug],
-      products[:ror_stein],
-      products[:spree_stein],
-      products[:spree_mug]
+      products[:bikini], 
+      products[:thong], 
+      products[:girlshort], 
+      products[:brief]
     ]
   },
   {
-    :name => "Clothing",
+    :name => "Camisoles",
     :taxonomy => categories,
-    :parent => "Categories" 
+    :parent => "Categories",
+    :position => 3,
+    :products => [
+      products[:spaghetti_cami], 
+      products[:scoop_neck_cami],
+      products[:sleeveless_tee], 
+      products[:wrap_cami], 
+    ]
   },
   {
-    :name => "Shirts",
+    :name => "Tanks",
     :taxonomy => categories,
-    :parent => "Clothing",
-    :position => 0,
+    :parent => "Categories",
+    :position => 4,
     :products => [
-      products[:ror_jr_spaghetti],
-      products[:spree_jr_spaghetti]
+      products[:ribbed_knit_tank], 
     ]
   },
   {
-    :name => "T-Shirts",
+    :name => "Dress",
     :taxonomy => categories,
-    :parent => "Clothing" ,
+    :parent => "Categories",
+    :position => 5,
     :products => [
-      products[:ror_baseball_jersey],
-      products[:ror_ringer],
-      products[:apache_baseball_jersey],
-      products[:ruby_baseball_jersey],
-      products[:spree_baseball_jersey],
-      products[:spree_ringer]
-    ],
-    :position => 0
-  },
-  {
-    :name => "Brands",
-    :taxonomy => brands
-  },
-  {
-    :name => "Ruby",
-    :taxonomy => brands,
-    :parent => "Brand",
-    :products => [
-      products[:ruby_baseball_jersey]
+      products[:wrap_chemise],
     ]
   },
   {
-    :name => "Apache",
-    :taxonomy => brands,
-    :parent => "Brand",
+    :name => "Jackets",
+    :taxonomy => categories,
+    :parent => "Categories",
+    :position => 6,
     :products => [
-      products[:apache_baseball_jersey]
+      products[:flyaway_jacket], 
+      products[:everyday_jacket], 
     ]
   },
   {
-    :name => "Spree",
-    :taxonomy => brands,
-    :parent => "Brand",
+    :name => "Pants",
+    :taxonomy => categories,
+    :parent => "Categories",
+    :position => 7,
     :products => [
-      products[:spree_stein],
-      products[:spree_mug],
-      products[:spree_ringer],
-      products[:spree_baseball_jersey],
-      products[:spree_tote],
-      products[:spree_bag],
-      products[:spree_jr_spaghetti],
-    ]
-  },
-  {
-    :name => "Rails",
-    :taxonomy => brands,
-    :parent => "Brand",
-    :products => [
-      products[:ror_tote],
-      products[:ror_bag],
-      products[:ror_mug],
-      products[:ror_stein],
-      products[:ror_baseball_jersey],
-      products[:ror_jr_spaghetti],
-      products[:ror_ringer],
+      products[:relaxed_legging],
+      products[:everyday_pant] 
     ]
   },
 ]
+
 
 taxons.each do |taxon_attrs|
   if taxon_attrs[:parent]
