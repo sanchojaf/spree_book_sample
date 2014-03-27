@@ -5,7 +5,7 @@ categories = Spree::Taxonomy.find_by_name!("Categories")
 #brands = Spree::Taxonomy.find_by_name!("Brand")
 
 products = { 
-   #TODO Deni
+
   :plunge => "Plunge", #Ruby on Rails Tote
   :sleeveless_tee => "Sleeveless Tee", #Ruby on Rails Bag
   :bikini => "Bikini", #Ruby on Rails Mug
@@ -37,78 +37,50 @@ taxons = [
     :position => 0
   },   
   {
-    :name => "Bras",
+    :name => "Tops",
     :taxonomy => categories,
     :parent => "Categories",
     :position => 1,
     :products => [
-      products[:plunge],
-      products[:full] 
-      # TODO: add Demi
-    ]
-  },
-  {
-    :name => "Panties",
-    :taxonomy => categories,
-    :parent => "Categories",
-    :position => 2,
-    :products => [
-      products[:bikini], 
-      products[:thong], 
-      products[:girlshort], 
-      products[:brief]
-    ]
-  },
-  {
-    :name => "Camisoles",
-    :taxonomy => categories,
-    :parent => "Categories",
-    :position => 3,
-    :products => [
       products[:spaghetti_strap_cami], 
       products[:scoop_neck_cami],
+      products[:ribbed_knit_tank], 
       products[:sleeveless_tee], 
       products[:wrap_cami], 
     ]
   },
   {
-    :name => "Tanks",
+    :name => "Bottoms",
     :taxonomy => categories,
     :parent => "Categories",
-    :position => 4,
-    :products => [
-      products[:ribbed_knit_tank], 
-    ]
-  },
-  {
-    :name => "Dress",
-    :taxonomy => categories,
-    :parent => "Categories",
-    :position => 5,
-    :products => [
-      products[:wrap_chemise],
-    ]
-  },
-  {
-    :name => "Jackets",
-    :taxonomy => categories,
-    :parent => "Categories",
-    :position => 6,
-    :products => [
-      products[:flyaway_jacket], 
-      products[:everyday_jacket], 
-    ]
-  },
-  {
-    :name => "Pants",
-    :taxonomy => categories,
-    :parent => "Categories",
-    :position => 7,
+    :position => 2,
     :products => [
       products[:relaxed_legging],
       products[:everyday_pant] 
     ]
   },
+  {
+    :name => "Chemises",
+    :taxonomy => categories,
+    :parent => "Categories",
+    :position => 3,
+    :products => [
+      products[:wrap_cami], 
+      products[:wrap_chemise],
+    ]
+  },
+
+  {
+    :name => "Jackets",
+    :taxonomy => categories,
+    :parent => "Categories",
+    :position => 4,
+    :products => [
+      products[:flyaway_jacket], 
+      products[:everyday_jacket], 
+    ]
+  },
+
 ]
 
 
