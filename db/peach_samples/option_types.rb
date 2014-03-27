@@ -11,4 +11,3 @@ Spree::OptionType.create!([
   }
 ])
 
-puts "option_types ///////////// #{Spree::OptionType.all}"

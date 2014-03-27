@@ -38,12 +38,12 @@ orders << Spree::Order.create!(
   :billing_address => Spree::Address.last)
 
 orders[0].line_items.create!(
-  :variant => Spree::Product.find_by_name!("Ruby on Rails Tote").master, #Plunge
+  :variant => Spree::Product.find_by_name!("Plunge").master, #Ruby on Rails Tote
   :quantity => 1,
   :price => 15.99)
 
 orders[1].line_items.create!(
-  :variant => Spree::Product.find_by_name!("Ruby on Rails Bag").master, #Sleeveless Tee
+  :variant => Spree::Product.find_by_name!("Sleeveless Tee").master, #Ruby on Rails Bag
   :quantity => 1,
   :price => 22.99)
 
