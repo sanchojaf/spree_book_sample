@@ -71,12 +71,10 @@ products.each do |product, colors|
           :cost_price => 10 + rand(90)
         }
 
-      masters << {
-         product => { 
+      masters[product] = { 
           :sku => "#{product.name.gsub(' ','_')}",
           :cost_price => 10 + rand(90)
         }
-      }
     end
   end
 end
