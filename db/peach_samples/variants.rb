@@ -57,7 +57,7 @@ products = {
   wrap_cami             => [black, white, gray, blossom, lilac, eggplant]
 }
 
-varians = []
+variants = []
 masters = {}
 
 products.each do |product, colors|
