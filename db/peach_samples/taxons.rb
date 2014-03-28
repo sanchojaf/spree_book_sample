@@ -1,28 +1,23 @@
 Spree::Sample.load_sample("taxonomies")
-#Spree::Sample.load_sample("products")
-
 categories = Spree::Taxonomy.find_by_name!("Categories")
-#brands = Spree::Taxonomy.find_by_name!("Brand")
 
 products = { 
-
-  :plunge => "Plunge", #Ruby on Rails Tote
-  :sleeveless_tee => "Sleeveless Tee", #Ruby on Rails Bag
-  :bikini => "Bikini", #Ruby on Rails Mug
-  :thong => "Thong", #Ruby on Rails Stein
-  :full => "Full", #  ror_baseball_jersey
-  :spaghetti_strap_cami => "Spaghetti Strap Cami", #Ruby on Rails Jr. Spaghetti
-  :ribbed_knit_tank => "Ribbed-knit Tank", #Ruby on Rails Ringer T-Shirt
-  :girlshort => "Girlshort", #Spree Stein
-  :brief => "Brief", #Spree Mug
-  :everyday_jacket => "Everyday Jacket", #Spree Ringer T-Shirt
-  :flyaway_jacket =>  "Flyaway Jacket", #Spree Baseball Jersey
-  :relaxed_legging => "Relaxed Legging", #Spree Tote
-  :everyday_pant => "Everyday Pant", #Spree Bag
-  :scoop_neck_cami => "Scoop Neck Cami", #Spree Jr. Spaghetti
-  :wrap_cami => "Wrap Cami", #Apache Baseball Jersey
-  :wrap_chemise => "Wrap Chemise", #Ruby Baseball Jersey
-
+  :plunge => "Plunge", 
+  :sleeveless_tee => "Sleeveless Tee",
+  :bikini => "Bikini", 
+  :thong => "Thong", 
+  :full => "Full", 
+  :spaghetti_strap_cami => "Spaghetti Strap Cami", 
+  :ribbed_knit_tank => "Ribbed-knit Tank", 
+  :girlshort => "Girlshort", 
+  :brief => "Brief", 
+  :everyday_jacket => "Everyday Jacket", 
+  :flyaway_jacket =>  "Flyaway Jacket", 
+  :relaxed_legging => "Relaxed Legging", 
+  :everyday_pant => "Everyday Pant", 
+  :scoop_neck_cami => "Scoop Neck Cami", 
+  :wrap_cami => "Wrap Cami", 
+  :wrap_chemise => "Wrap Chemise", 
 }
 
 
@@ -65,11 +60,9 @@ taxons = [
     :parent => "Categories",
     :position => 3,
     :products => [
-      products[:wrap_cami], 
       products[:wrap_chemise],
     ]
   },
-
   {
     :name => "Jackets",
     :taxonomy => categories,
@@ -80,9 +73,7 @@ taxons = [
       products[:everyday_jacket], 
     ]
   },
-
 ]
-
 
 taxons.each do |taxon_attrs|
   if taxon_attrs[:parent]
