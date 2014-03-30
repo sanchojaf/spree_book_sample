@@ -84,11 +84,11 @@ images = {
 #      :attachment => image("ribbed_knit_tank")
 #    },
 #  ],
-  products[:thong].master => [
-    {
-      :attachment => image("thong")
-    },
-  ],
+#  products[:thong].master => [
+#    {
+#      :attachment => image("thong")
+#    },
+#  ],
   products[:wrap_cami].master => [
     {
       :attachment => image("wrap_cami", "jpg")

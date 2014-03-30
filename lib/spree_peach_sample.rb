@@ -21,7 +21,7 @@ module SpreePeachSample
       Spree::PeachSample.load_peach_sample("prototypes")
       Spree::PeachSample.load_peach_sample("variants")
       Spree::PeachSample.load_peach_sample("stock")
-      #Spree::PeachSample.load_peach_sample("assets")
+      Spree::PeachSample.load_peach_sample("assets")
 
       Spree::PeachSample.load_peach_sample("orders")
       Spree::PeachSample.load_peach_sample("adjustments")
