@@ -50,6 +50,7 @@ def image(name, type="jpg")
   images_path = Pathname.new(File.dirname(__FILE__)) + "images"
   path = images_path + "#{dic_images[name]}.#{type}"
   puts "*********************name product: #{name}"
+  puts "********************dic_images[name]: #{dic_images[name]}"
   return false if !File.exist?(path)
   File.open(path)
 end
