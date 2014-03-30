@@ -48,7 +48,7 @@ def image(name, type="jpg")
   }
 
   images_path = Pathname.new(File.dirname(__FILE__)) + "images"
-  path = images_path + "#{dic_images[name]}.#{type}"
+  path = images_path + "#{dic_images[dic_images.keys[0]]}.#{type}"
   return false if !File.exist?(path)
   File.open(path)
 end
@@ -91,12 +91,12 @@ images = {
 #  ],
   products[:wrap_cami].master => [
     {
-      :attachment => image("wrap_cami", "jpg")
+      :attachment => image("wrap_cami")
     },
   ],
   products[:wrap_chemise].master => [
     {
-      :attachment => image("wrap_chemise", "jpg")
+      :attachment => image("wrap_chemise")
     },
   ],
   products[:everyday_pant].master => [
