@@ -48,7 +48,8 @@ def image(name, type="jpg")
   }
 
   images_path = Pathname.new(File.dirname(__FILE__)) + "images"
-  path = images_path + "#{dic_images[dic_images.keys[0]]}.#{type}"
+  path = images_path + "#{dic_images[name]}.#{type}"
+  puts "*********************name product: #{name}"
   return false if !File.exist?(path)
   File.open(path)
 end
@@ -61,7 +62,7 @@ images = {
 #  ],
   products[:sleeveless_tee].master => [
     {
-      :attachment => image("sleeveless_tee")
+      :attachment => image('sleeveless_tee')
     }
   ],
 #  products[:full].master => [ 
@@ -71,10 +72,10 @@ images = {
 #  ],
   products[:spaghetti_strap_cami].master => [
     {
-      :attachment => image("spaghetti_strap_cami")
+      :attachment => image('spaghetti_strap_cami')
     }
   ],
-#  products[:bikini].master => [
+#  products[:bikini].maste => [
 #    {
 #      :attachment => image("bikini")
 #    },
@@ -91,37 +92,37 @@ images = {
 #  ],
   products[:wrap_cami].master => [
     {
-      :attachment => image("wrap_cami")
+      :attachment => image('wrap_cami')
     },
   ],
   products[:wrap_chemise].master => [
     {
-      :attachment => image("wrap_chemise")
+      :attachment => image('wrap_chemise')
     },
   ],
   products[:everyday_pant].master => [
     {
-      :attachment => image("everyday_pant")
+      :attachment => image('everyday_pant')
     },
   ],
   products[:relaxed_legging].master => [
     {
-      :attachment => image("relaxed_legging")
+      :attachment => image('relaxed_legging')
     },
   ],
   products[:everyday_jacket].master => [
     {
-      :attachment => image("everyday_jacket")
+      :attachment => image('everyday_jacket')
     },
   ],
   products[:scoop_neck_cami].master => [
     {
-      :attachment => image("scoop_neck_cami")
+      :attachment => image('scoop_neck_cami')
     }
   ],
   products[:flyaway_jacket].master => [
     {
-      :attachment => image("flyaway_jacket")
+      :attachment => image('flyaway_jacket')
     },
   ],
 #  products[:girlshort].master => [
