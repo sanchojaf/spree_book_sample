@@ -12,7 +12,7 @@ products[:refined_matchstick_pant] = Spree::Product.find_by_name!("Refined Strai
 products[:refined_straight_pant] = Spree::Product.find_by_name!("Refined Straight Pant")
 products[:refined_wrap_chemise] = Spree::Product.find_by_name!("Refined Wrap Chemise")
 products[:the_jennifer_wrap_jacket] = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
-products[:the_carolina_fitted_jacket] = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
+products[:the_carolina_fitted_jacket] = Spree::Product.find_by_name!("The Carolina Fitted Jacket") 
 
 def image(name, type="jpg")
   dic_images = {
