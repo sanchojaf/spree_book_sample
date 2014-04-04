@@ -71,8 +71,8 @@ Spree::OptionValue.create!([
     :option_type => color,
   },
   {
-    :name => "Heater Grey",
-    :presentation => "Heater Grey",
+    :name => "Heather Grey",
+    :presentation => "Heather Grey",
     :position => 6,
     :option_type => color
   },
