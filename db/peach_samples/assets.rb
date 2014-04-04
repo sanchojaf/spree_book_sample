@@ -32,7 +32,10 @@ def image(name, type="jpg")
 
   images_path = Pathname.new(File.dirname(__FILE__)) + "images"
   path = images_path + "#{dic_images[name]}.#{type}"
-  return false if !File.exist?(path)
+  if !File.exist?(path)  
+    puts "**************** not exist the path #{path}"
+    return false    
+  end
   File.open(path)
 end
 
@@ -42,7 +45,6 @@ products.each do |key,p|
  images[p.master] = image(key) 
 end
 
-puts "*****************dic image #{images.inspect}"
 
 images.each do |variant, attachments|
   puts "Loading images for #{variant.product.name}"
