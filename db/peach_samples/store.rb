@@ -7,7 +7,7 @@ seller_store = Spree::Store.create! name: 'seller-website', code: 'seller', defa
   
 if Rails.env == "production"
   customer_store.domains = 'www.customer-peach.openjaf.com'
-  seller_store.domains = 'www.seller-peach.openjaf.com' 
+  seller_store.domains = 'stage.peachunderneath.com'  
 end
 
 customer_store.save

@@ -10,101 +10,87 @@ default_attrs = {
 
 products = [
   {
-    :name => "Refined Spaghetti Strap Cami", #Ruby on Rails Tote
+    :name => "Refined Spaghetti Strap Cami", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 15.99,
-    :eur_price => 14,
-    :description => "sasasas",
+    :price => 40,
+    :description => "Refined Spaghetti Strap Cami",
   },
 
   {
-    :name => "Refined 1.5-inch Scoop Neck Cami", #Ruby on Rails Bag
+    :name => "Refined 1.5-inch Scoop Neck Cami", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 22.99,
-    :eur_price => 19,
-    :description => "sasasas",
+    :price => 50,
+    :description => "Refined 1.5-inch Scoop Neck Cami",
   },
 
   {
-    :name => "Refined 1.5-inch Rib-knit Cami", #Ruby on Rails Baseball Jersey
+    :name => "Refined 1.5-inch Rib-knit Cami", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 30,
+    :description => "Refined 1.5-inch Rib-knit Cami",
   },
 
   {
-    :name => "Refined 3-inch Scoop Neck Cami", #Ruby on Rails Jr. Spaghetti
+    :name => "Refined 3-inch Scoop Neck Cami", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 50,
+    :description => "Refined 3-inch Scoop Neck Cami",
 
   },
   {
-    :name => "Refined Wrap Cami", #Ruby on Rails Ringer T-Shirt
+    :name => "Refined Wrap Cami", 
     :shipping_category => shipping_category,
     :tax_category => clothing,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 55,
+    :description => "Refined Wrap Cami",
   },
   {
-    :name => "Refined Matchstick Pant", #Ruby Baseball Jersey
+    :name => "Refined Matchstick Pant", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 60,
+    :description => "Refined Matchstick Pant",
   },
   {
-    :name => "Refined Straight Pant", #Apache Baseball Jersey
+    :name => "Refined Straight Pant", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 60,
+    :description => "Refined Straight Pant",
   },
   {
-    :name => "Refined Wrap Chemise", #Spree Baseball Jersey
+    :name => "Refined Wrap Chemise", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 65,
+    :description => "Refined Straight Pant",
   },
   {
-    :name => "The Jennifer Wrap Jacket", #Spree Jr. Spaghetti
+    :name => "The Jennifer Wrap Jacket",
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 90,
+    :description => "Refined Straight Pant",
   },
   {
-    :name => "The Carolina Fitted Jacket", #Spree Ringer T-Shirt
+    :name => "The Carolina Fitted Jacket", 
     :tax_category => clothing,
     :shipping_category => shipping_category,
-    :price => 19.99,
-    :eur_price => 16,
-    :description => "sasasas",
+    :price => 110,
+    :description => "Refined Straight Pant",
   },
  
 ]
 
 products.each do |product_attrs|
-  eur_price = product_attrs.delete(:eur_price)
   Spree::Config[:currency] = "USD"
-
   default_shipping_category = Spree::ShippingCategory.find_by_name!("Default")
   product = Spree::Product.create!(default_attrs.merge(product_attrs))
-  Spree::Config[:currency] = "EUR"
   product.reload
-  product.price = eur_price
   product.shipping_category = default_shipping_category
   product.save!
 end
