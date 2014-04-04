@@ -15,7 +15,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 15.99,
     :eur_price => 14,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
 
   {
@@ -24,7 +24,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 22.99,
     :eur_price => 19,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
 
   {
@@ -33,7 +33,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
 
   {
@@ -42,7 +42,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
 
   },
   {
@@ -51,7 +51,7 @@ products = [
     :tax_category => clothing,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
   {
     :name => "Refined Matchstick Pant", #Ruby Baseball Jersey
@@ -59,7 +59,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
   {
     :name => "Refined Straight Pant", #Apache Baseball Jersey
@@ -67,7 +67,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
   {
     :name => "Refined Wrap Chemise", #Spree Baseball Jersey
@@ -75,7 +75,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
   {
     :name => "The Jennifer Wrap Jacket", #Spree Jr. Spaghetti
@@ -83,7 +83,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
   {
     :name => "The Carolina Fitted Jacket", #Spree Ringer T-Shirt
@@ -91,7 +91,7 @@ products = [
     :shipping_category => shipping_category,
     :price => 19.99,
     :eur_price => 16,
-    :description => Faker::Lorem.paragraph,
+    :description => "sasasas",
   },
  
 ]
