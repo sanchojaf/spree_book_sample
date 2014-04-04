@@ -41,7 +41,7 @@ products = {
   refined_wrap_cami: [black, white, gray, blossom, lilac, eggplant],
   refined_matchstick_pant: [black, gray],
   refined_straight_pant: [black, gray],
-  refined_wrap_chemise: [lack, gray, blossom, eggplant],
+  refined_wrap_chemise: [black, gray, blossom, eggplant],
   the_jennifer_wrap_jacket: [black, gray],
   the_carolina_fitted_jacket:  [black, blossom],
 }
