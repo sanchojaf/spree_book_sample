@@ -1,3 +1,4 @@
+encoding: utf-8
 #Spree::Sample.load_sample("products")
 #Spree::Sample.load_sample("variants")
 
