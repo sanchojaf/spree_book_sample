@@ -3,16 +3,16 @@
 
 products = {}
 
-products[:refined_spaghetti_strap_cami] = Spree::Product.find_by_name!("Refined Spaghetti Strap Cami") 
-products[:refined_1_5_inch_scoop_neck_cami] = Spree::Product.find_by_name!("Refined 1.5-inch Scoop Neck Cami")
-products[:refined_1_5_inch_rib_knit_cami] = Spree::Product.find_by_name!("Refined 1.5-inch Rib-knit Cami") 
-products[:refined_3_inch_scoop_neck_cami] = Spree::Product.find_by_name!("Refined 3-inch Scoop Neck Cami") 
-products[:refined_wrap_cami] = Spree::Product.find_by_name!("Refined Wrap Cami")
-products[:refined_matchstick_pant] = Spree::Product.find_by_name!("Refined Straight Pant")
-products[:refined_straight_pant] = Spree::Product.find_by_name!("Refined Straight Pant")
-products[:refined_wrap_chemise] = Spree::Product.find_by_name!("Refined Wrap Chemise")
-products[:the_jennifer_wrap_jacket] = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
-products[:the_carolina_fitted_jacket] = Spree::Product.find_by_name!("The Carolina Fitted Jacket") 
+products['refined_spaghetti_strap_cami'] = Spree::Product.find_by_name!("Refined Spaghetti Strap Cami") 
+products['refined_1_5_inch_scoop_neck_cami'] = Spree::Product.find_by_name!("Refined 1.5-inch Scoop Neck Cami")
+products['refined_1_5_inch_rib_knit_cami'] = Spree::Product.find_by_name!("Refined 1.5-inch Rib-knit Cami") 
+products['refined_3_inch_scoop_neck_cami'] = Spree::Product.find_by_name!("Refined 3-inch Scoop Neck Cami") 
+products['refined_wrap_cami'] = Spree::Product.find_by_name!("Refined Wrap Cami")
+products['refined_matchstick_pant'] = Spree::Product.find_by_name!("Refined Straight Pant")
+products['refined_straight_pant'] = Spree::Product.find_by_name!("Refined Straight Pant")
+products['refined_wrap_chemise'] = Spree::Product.find_by_name!("Refined Wrap Chemise")
+products['the_jennifer_wrap_jacket'] = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
+products['the_carolina_fitted_jacket'] = Spree::Product.find_by_name!("The Carolina Fitted Jacket") 
 
 def image(name, type="jpg")
   dic_images = {
