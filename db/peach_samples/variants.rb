@@ -34,16 +34,16 @@ sizes = [xs, s, m, l, xl, xxl]
 
 products = {
 
-  refined_spaghetti_strap_cami: [black, white, gray, natural, cream, blossom, lilac, eggplant],
-  refined_1_5_inch_scoop_neck_cami:  [black, white, gray, natural, cream, blossom, lilac, eggplant],
-  refined_1_5_inch_rib_knit_cami: [black, white, heather_grey, natural, cream, blossom, lilac, eggplant],
-  refined_3_inch_scoop_neck_cami:  [black, white, gray, natural, cream, blossom, lilac, eggplant],
-  refined_wrap_cami: [black, white, gray, blossom, lilac, eggplant],
-  refined_matchstick_pant: [black, gray],
-  refined_straight_pant: [black, gray],
-  refined_wrap_chemise: [black, gray, blossom, eggplant],
-  the_jennifer_wrap_jacket: [black, gray],
-  the_carolina_fitted_jacket:  [black, blossom],
+  refined_spaghetti_strap_cami => [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_1_5_inch_scoop_neck_cami =>  [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_1_5_inch_rib_knit_cami => [black, white, heather_grey, natural, cream, blossom, lilac, eggplant],
+  refined_3_inch_scoop_neck_cami =>  [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_wrap_cami => [black, white, gray, blossom, lilac, eggplant],
+  refined_matchstick_pant => [black, gray],
+  refined_straight_pant => [black, gray],
+  refined_wrap_chemise => [black, gray, blossom, eggplant],
+  the_jennifer_wrap_jacket => [black, gray],
+  the_carolina_fitted_jacket =>  [black, blossom],
 }
 
 variants = []
