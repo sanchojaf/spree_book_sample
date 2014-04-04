@@ -17,16 +17,16 @@ products[:the_carolina_fitted_jacket] = Spree::Product.find_by_name!("The Jennif
 def image(name, type="jpg")
   dic_images = {
 
-      refined_spaghetti_strap_cami: 'C-01Black',
-      refined_1_5_inch_scoop_neck_cami:  'C-02White',
-      refined_1_5_inch_rib_knit_cami: 'T-01White',
-      refined_3_inch_scoop_neck_cami: 'C-03Black',
-      refined_wrap_cami: 'L-02Black',
-      refined_matchstick_pant: 'C-04Eggplant',
-      refined_straight_pant:  'L-01Black',
-      refined_wrap_chemise: 'D-01Black',
-      the_jennifer_wrap_jacket:  'J-02Pink',
-      the_carolina_fitted_jacket: 'J-01Black'
+      :refined_spaghetti_strap_cami => 'C-01Black',
+      :refined_1_5_inch_scoop_neck_cami =>  'C-02White',
+      :refined_1_5_inch_rib_knit_cami => 'T-01White',
+      :refined_3_inch_scoop_neck_cami => 'C-03Black',
+      :refined_wrap_cami => 'L-02Black',
+      :refined_matchstick_pant => 'C-04Eggplant',
+      :refined_straight_pant => 'L-01Black',
+      :refined_wrap_chemise => 'D-01Black',
+      :the_jennifer_wrap_jacket => 'J-02Pink',
+      :the_carolina_fitted_jacket => 'J-01Black'
 
   }
 
