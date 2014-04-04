@@ -42,6 +42,7 @@ products.each do |key,p|
  images[p.master] = image(key) 
 end
 
+puts "*****************dic image #{images.inspect}"
 
 images.each do |variant, attachments|
   puts "Loading images for #{variant.product.name}"
