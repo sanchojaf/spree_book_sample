@@ -11,7 +11,7 @@ refined_matchstick_pant  = Spree::Product.find_by_name!("Refined Straight Pant")
 refined_straight_pant  = Spree::Product.find_by_name!("Refined Straight Pant")
 refined_wrap_chemise  = Spree::Product.find_by_name!("Refined Wrap Chemise")
 the_jennifer_wrap_jacket  = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
-the_carolina_fitted_jacket  = Spree::Product.find_by_name!("he Jennifer Wrap Jacket") 
+the_carolina_fitted_jacket  = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
 
 xs = Spree::OptionValue.find_by_name!("XS")
 s = Spree::OptionValue.find_by_name!("S")
