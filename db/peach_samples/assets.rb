@@ -4,7 +4,7 @@
 #Spree::Sample.load_sample("variants")
 
 products = {
-  'refined_spaghetti_strap_cami' => Spree::Product.find_by_name!("Refined Spaghetti Strap Cami"),
+  #'refined_spaghetti_strap_cami' => Spree::Product.find_by_name!("Refined Spaghetti Strap Cami"),
   'refined_1_5_inch_scoop_neck_cami' => Spree::Product.find_by_name!("Refined 1.5-inch Scoop Neck Cami"),
   'refined_1_5_inch_rib_knit_cami' => Spree::Product.find_by_name!("Refined 1.5-inch Rib-knit Cami"), 
   'refined_3_inch_scoop_neck_cami' => Spree::Product.find_by_name!("Refined 3-inch Scoop Neck Cami"), 
@@ -18,7 +18,7 @@ products = {
 
 def image(name, type="jpg")
   dic_images = {
-      'refined_spaghetti_strap_cami' => 'C-01Black',
+     # 'refined_spaghetti_strap_cami' => 'C-01Black',
       'refined_1_5_inch_scoop_neck_cami' =>  'C-02White',
       'refined_1_5_inch_rib_knit_cami' => 'T-01White',
       'refined_3_inch_scoop_neck_cami' => 'C-03Black',
@@ -49,6 +49,7 @@ end
 images.each do |variant, attachments|
   puts "Loading images for #{variant.product.name}"
   attachments.each do |attachment|
+    puts "Loading attachment for #{attachment.inspect}"
     variant.images.create!(attachment)
   end
 end
