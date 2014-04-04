@@ -2,22 +2,17 @@ Spree::Sample.load_sample("taxonomies")
 categories = Spree::Taxonomy.find_by_name!("Categories")
 
 products = { 
-  :plunge => "Plunge", 
-  :sleeveless_tee => "Sleeveless Tee",
-  :bikini => "Bikini", 
-  :thong => "Thong", 
-  :full => "Full", 
-  :spaghetti_strap_cami => "Spaghetti Strap Cami", 
-  :ribbed_knit_tank => "Ribbed-knit Tank", 
-  :girlshort => "Girlshort", 
-  :brief => "Brief", 
-  :everyday_jacket => "Everyday Jacket", 
-  :flyaway_jacket =>  "Flyaway Jacket", 
-  :relaxed_legging => "Relaxed Legging", 
-  :everyday_pant => "Everyday Pant", 
-  :scoop_neck_cami => "Scoop Neck Cami", 
-  :wrap_cami => "Wrap Cami", 
-  :wrap_chemise => "Wrap Chemise", 
+
+  refined_spaghetti_strap_cami: 'Refined Spaghetti Strap Cami',
+  refined_1_5_inch_scoop_neck_cami: 'Refined 1.5-inch Scoop Neck Cami',
+  refined_1_5_inch_rib_knit_cami: 'Refined 1.5-inch Rib-knit Cami',
+  refined_3_inch_scoop_neck_cami: 'Refined 3-inch Scoop Neck Cami',
+  refined_wrap_cami: 'Refined Wrap Cami',
+  refined_matchstick_pant: 'Refined Matchstick Pant',
+  refined_straight_pant: 'Refined Straight Pant',
+  refined_wrap_chemise: 'Refined Wrap Chemise',
+  the_jennifer_wrap_jacket: 'The Jennifer Wrap Jacket',
+  the_carolina_fitted_jacket: 'The Carolina Fitted Jacket', 
 }
 
 
@@ -37,11 +32,11 @@ taxons = [
     :parent => "Categories",
     :position => 1,
     :products => [
-      products[:spaghetti_strap_cami], 
-      products[:scoop_neck_cami],
-      products[:ribbed_knit_tank], 
-      products[:sleeveless_tee], 
-      products[:wrap_cami], 
+      products[:refined_spaghetti_strap_cami],
+      products[:refined_1_5_inch_scoop_neck_cami],
+      products[:refined_1_5_inch_rib_knit_cami],
+      products[:refined_3_inch_scoop_neck_cami],
+      products[:refined_wrap_cami],
     ]
   },
   {
@@ -50,8 +45,9 @@ taxons = [
     :parent => "Categories",
     :position => 2,
     :products => [
-      products[:relaxed_legging],
-      products[:everyday_pant] 
+ 
+      products[:refined_matchstick_pant],
+      products[:refined_straight_pant], 
     ]
   },
   {
@@ -60,7 +56,7 @@ taxons = [
     :parent => "Categories",
     :position => 3,
     :products => [
-      products[:wrap_chemise],
+      products[:refined_wrap_chemise],
     ]
   },
   {
@@ -69,8 +65,8 @@ taxons = [
     :parent => "Categories",
     :position => 4,
     :products => [
-      products[:flyaway_jacket], 
-      products[:everyday_jacket], 
+      products[:the_jennifer_wrap_jacket], 
+      products[:the_carolina_fitted_jacket], 
     ]
   },
 ]

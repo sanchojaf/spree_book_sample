@@ -17,15 +17,15 @@ module SpreePeachSample
       Spree::PeachSample.load_peach_sample("taxons")
       Spree::PeachSample.load_peach_sample("option_values")
       Spree::PeachSample.load_peach_sample("product_option_types")
-      Spree::PeachSample.load_peach_sample("product_properties")
+     # Spree::PeachSample.load_peach_sample("product_properties")
       Spree::PeachSample.load_peach_sample("prototypes")
       Spree::PeachSample.load_peach_sample("variants")
-      Spree::PeachSample.load_peach_sample("stock")
+      #Spree::PeachSample.load_peach_sample("stock")
       Spree::PeachSample.load_peach_sample("assets")
 
-      Spree::PeachSample.load_peach_sample("orders")
-      Spree::PeachSample.load_peach_sample("adjustments")
-      Spree::PeachSample.load_peach_sample("payments")
+      #Spree::PeachSample.load_peach_sample("orders")
+      #Spree::PeachSample.load_peach_sample("adjustments")
+      #Spree::PeachSample.load_peach_sample("payments")
       Spree::PeachSample.load_peach_sample("store")
     end
   end

@@ -1,23 +1,17 @@
 #Spree::Sample.load_sample("option_values")
 #Spree::Sample.load_sample("products")
 
-full = Spree::Product.find_by_name!("Full") # Ruby on Rails Baseball Jersey
-plunge = Spree::Product.find_by_name!("Plunge") #Ruby on Rails Tote
-sleeveless_tee = Spree::Product.find_by_name!("Sleeveless Tee") #Ruby on Rails Bag
-spaghetti_strap_cami = Spree::Product.find_by_name!("Spaghetti Strap Cami") #Ruby on Rails Jr. Spaghetti
-bikini = Spree::Product.find_by_name!("Bikini") #Ruby on Rails Mug
-ribbed_knit_tank = Spree::Product.find_by_name!("Ribbed-knit Tank") # Ruby on Rails Ringer T-Shirt
-thong = Spree::Product.find_by_name!("Thong") #Ruby on Rails Stein
-flyaway_jacket = Spree::Product.find_by_name!("Flyaway Jacket") #Spree Baseball Jersey
-girlshort = Spree::Product.find_by_name!("Girlshort") #Spree Stein
-scoop_neck_cami = Spree::Product.find_by_name!("Scoop Neck Cami") #Spree Jr. Spaghetti
-brief = Spree::Product.find_by_name!("Brief") #Spree Mug
-everyday_jacket = Spree::Product.find_by_name!("Everyday Jacket") #Spree Ringer T-Shirt
-relaxed_legging = Spree::Product.find_by_name!("Relaxed Legging") #Spree Tote
-everyday_pant = Spree::Product.find_by_name!("Everyday Pant") #Spree Bag
-wrap_chemise = Spree::Product.find_by_name!("Wrap Chemise") #Ruby Baseball Jersey
-wrap_cami = Spree::Product.find_by_name!("Wrap Cami") #Apache Baseball Jersey
 
+refined_spaghetti_strap_cami  = Spree::Product.find_by_name!("Refined Spaghetti Strap Cami") 
+refined_1_5_inch_scoop_neck_cami  = Spree::Product.find_by_name!("Refined 1.5-inch Scoop Neck Cami")
+refined_1_5_inch_rib_knit_cami  = Spree::Product.find_by_name!("Refined 1.5-inch Rib-knit Cami") 
+refined_3_inch_scoop_neck_cami  = Spree::Product.find_by_name!("Refined 3-inch Scoop Neck Cami") 
+refined_wrap_cami  = Spree::Product.find_by_name!("Refined Wrap Cami")
+refined_matchstick_pant  = Spree::Product.find_by_name!("Refined Straight Pant")
+refined_straight_pant  = Spree::Product.find_by_name!("Refined Straight Pant")
+refined_wrap_chemise  = Spree::Product.find_by_name!("Refined Wrap Chemise")
+the_jennifer_wrap_jacket  = Spree::Product.find_by_name!("The Jennifer Wrap Jacket") 
+the_carolina_fitted_jacket  = Spree::Product.find_by_name!("he Jennifer Wrap Jacket") 
 
 xs = Spree::OptionValue.find_by_name!("XS")
 s = Spree::OptionValue.find_by_name!("S")
@@ -39,22 +33,17 @@ lilac = Spree::OptionValue.find_by_name!("Lilac")
 sizes = [xs, s, m, l, xl, xxl]
 
 products = {
-  full                  => [black, natural],
-  plunge                => [black, natural], 
-  sleeveless_tee        => [black, white, gray, natural, cream, blossom, lilac, eggplant], 
-  spaghetti_strap_cami  => [black, white, gray, natural, cream, blossom, lilac, eggplant],
-  bikini                => [black, natural, blossom, lilac, eggplant],
-  ribbed_knit_tank      => [black, white, heater_grey, natural, cream, blossom, lilac, eggplant], 
-  thong                 => [black, natural, blossom, lilac, eggplant], 
-  flyaway_jacket        => [black, gray],
-  girlshort             => [black, natural, blossom, lilac, eggplant],
-  scoop_neck_cami       => [black, white, gray, natural, cream, blossom, lilac, eggplant],
-  brief                 => [black, natural, blossom, lilac, eggplant],
-  everyday_jacket       => [black, blossom],
-  relaxed_legging       => [black, gray],
-  everyday_pant         => [black, gray],
-  wrap_chemise          => [black, gray, blossom, eggplant],
-  wrap_cami             => [black, white, gray, blossom, lilac, eggplant]
+
+  refined_spaghetti_strap_cami: [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_1_5_inch_scoop_neck_cami:  [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_1_5_inch_rib_knit_cami: [black, white, heather_grey, natural, cream, blossom, lilac, eggplant],
+  refined_3_inch_scoop_neck_cami:  [black, white, gray, natural, cream, blossom, lilac, eggplant],
+  refined_wrap_cami: [black, white, gray, blossom, lilac, eggplant],
+  refined_matchstick_pant: [black, gray],
+  refined_straight_pant: [black, gray],
+  refined_wrap_chemise: [lack, gray, blossom, eggplant],
+  the_jennifer_wrap_jacket: [black, gray],
+  the_carolina_fitted_jacket:  [black, blossom],
 }
 
 variants = []
@@ -71,7 +60,7 @@ products.each do |product, colors|
           :cost_price => 10 + rand(90)
         }
 
-      masters[product] = { 
+      masters[product ={ 
           :sku => "#{product.name.gsub(' ','_')}",
           :cost_price => 10 + rand(90)
         }
