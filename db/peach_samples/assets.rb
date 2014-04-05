@@ -42,7 +42,15 @@ images = {}
 products.each do |key,p|
  puts "************** key: #{key} "
  images[p.master] = [{:attachment => image(key)}] 
+ puts "*************key #{image(key)}"
+  p.variants.each do |variant|
+    color = variant.option_value("color")
+    main_image = image(key)
+    puts "*************calor #{color}"
+    variant.images.create!(:attachment => main_image, :alt => color)
+  end
 end
+
 
 
 images.each do |variant, attachments|
