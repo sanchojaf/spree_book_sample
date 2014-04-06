@@ -52,7 +52,7 @@ products.each do |key,p|
   if attch = image("#{p.sku}#{color}")
     images[p.master] << {:attachment => attch, :alt => color.name}
   else
-   puts "not exist image for product #{p.name} and color #{color}"
+   puts "not exist image for product #{p.name} and color #{color.name}"
    images[p.master] << {:attachment => image(key), :alt => color.name}
   end
  end
