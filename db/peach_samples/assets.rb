@@ -54,6 +54,7 @@ products.each do |key,p|
   else
    puts "not exist image for product #{p.name} and color #{color}"
    images[p.master] << {:attachment => image(key), :alt => color.name}
+  end
  end
 end
 
