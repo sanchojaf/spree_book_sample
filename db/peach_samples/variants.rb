@@ -56,13 +56,13 @@ products.each do |product, colors|
       variants << {
           :product => product, 
           :option_values => [size, color],
-          :sku => "#{product.name.gsub(' ','_')}-#{size.position}-#{color.position}",
-          :cost_price => 10 + rand(90)
+          :sku => "#{product.sku}_#{size}_#{color}",
+          :cost_price => product.price
         }
 
       masters[product] = { 
-          :sku => "#{product.name.gsub(' ','_')}",
-          :cost_price => 10 + rand(90)
+          :sku => "#{product.sku}",
+          :cost_price => product.price
         }
     end
   end
