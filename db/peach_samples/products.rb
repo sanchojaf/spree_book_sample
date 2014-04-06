@@ -10,39 +10,40 @@ default_attrs = {
 
 products = [
   {
-    :name => "Refined Spaghetti Strap Cami", 
+    :name => "Refined Spaghetti Strap Cami",
+    :sku => "C-01",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 40,
     :description => "Refined Spaghetti Strap Cami",
   },
-
   {
     :name => "Refined 1.5-inch Scoop Neck Cami", 
+    :sku => "C-02",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 50,
     :description => "Refined 1.5-inch Scoop Neck Cami",
   },
-
   {
     :name => "Refined 1.5-inch Rib-knit Cami", 
+    :sku => "T-01",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 30,
     :description => "Refined 1.5-inch Rib-knit Cami",
   },
-
   {
     :name => "Refined 3-inch Scoop Neck Cami", 
+    :sku => "C-03",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 50,
     :description => "Refined 3-inch Scoop Neck Cami",
-
   },
   {
     :name => "Refined Wrap Cami", 
+    :sku => "C-04",
     :shipping_category => shipping_category,
     :tax_category => clothing,
     :price => 55,
@@ -50,6 +51,7 @@ products = [
   },
   {
     :name => "Refined Matchstick Pant", 
+    :sku => "L-02",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 60,
@@ -57,6 +59,7 @@ products = [
   },
   {
     :name => "Refined Straight Pant", 
+    :sku => "L-01",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 60,
@@ -64,6 +67,7 @@ products = [
   },
   {
     :name => "Refined Wrap Chemise", 
+    :sku => "D-01",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 65,
@@ -71,6 +75,7 @@ products = [
   },
   {
     :name => "The Jennifer Wrap Jacket",
+    :sku => "J-02",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 90,
@@ -78,12 +83,12 @@ products = [
   },
   {
     :name => "The Carolina Fitted Jacket", 
+    :sku => "J-01",
     :tax_category => clothing,
     :shipping_category => shipping_category,
     :price => 110,
     :description => "Refined Straight Pant",
   },
- 
 ]
 
 products.each do |product_attrs|

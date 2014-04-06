@@ -19,7 +19,7 @@ products = {
 def image(name, type="jpg")
   dic_images = {
       'refined_spaghetti_strap_cami' => 'C-01Black',
-      'refined_1_5_inch_scoop_neck_cami' =>  'C-02White',
+      'refined_1_5_inch_scoop_neck_cami' => 'C-02White',
       'refined_1_5_inch_rib_knit_cami' => 'T-01White',
       'refined_3_inch_scoop_neck_cami' => 'C-03Black',
       'refined_wrap_cami' => 'L-02Black',
@@ -49,7 +49,11 @@ products.each do |key,p|
   color_option_type = option_type if option_type.name = 'color'
  end
  grouped_option_values[color_option_type].each do |color|
-  images[p.master] << {:attachment => image(key), :alt => color.name}
+  if attch = image("#{p.sku}#{color}")
+    images[p.master] << {:attachment => attch, :alt => color.name}
+  else
+   puts "not exist image for product #{p.name} and color #{color}"
+   images[p.master] << {:attachment => image(key), :alt => color.name}
  end
 end
 
