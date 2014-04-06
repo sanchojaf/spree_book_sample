@@ -49,7 +49,7 @@ products.each do |key,p|
   color_option_type = option_type if option_type.name = 'color'
  end
  grouped_option_values[color_option_type].each do |color|
-  if attch = image("#{p.sku}#{color}")
+  if attch = image("#{p.sku}#{color.name}")
     images[p.master] << {:attachment => attch, :alt => color.name}
   else
    puts "not exist image for product #{p.name} and color #{color.name}"
