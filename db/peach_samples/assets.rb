@@ -42,16 +42,16 @@ images = {}
 products.each do |key,p|
  puts "************** key: #{key} "
  images[p.master] = [{:attachment => image(key)}] 
- puts "*************key #{image(key)}"
-  p.variants.each do |variant|
-    color = variant.option_value("color")
-    main_image = image(key)
-    puts "*************calor #{color}"
-    variant.images.create!(:attachment => main_image, :alt => color)
-  end
+
+ grouped_option_values ||= p.option_values.group_by(&:option_type)
+ color_option_type = nil
+ grouped_option_values.keys.each do |option_type|
+  color_option_type = option_type if option_type.name = 'color'
+ end
+ grouped_option_values[color_option_type].each do |color|
+  images[p.master] << {:attachment => image(key), :alt => color.name}
+ end
 end
-
-
 
 images.each do |variant, attachments|
   puts "Loading images for #{variant.product.name}"
