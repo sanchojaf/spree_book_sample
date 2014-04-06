@@ -56,7 +56,7 @@ products.each do |product, colors|
       variants << {
           :product => product, 
           :option_values => [size, color],
-          :sku => "#{product.sku}_#{size}_#{color}",
+          :sku => "#{product.sku}_#{size.name}_#{color.name}",
           :cost_price => product.price
         }
 
