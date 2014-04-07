@@ -1,19 +1,19 @@
 Spree::Store.delete_all
 
-customer_store = Spree::Store.create! name: 'customer-website', code: 'customer', default: true, 
+customer_store = Spree::Store.create! name: 'customer-website', code: 'customer', default: false, 
                                       domains: 'customer.lvh.me:3000'
-seller_store = Spree::Store.create! name: 'seller-website', code: 'seller', default: false,
-                                    domains: 'seller.lvh.me:3000'
+stylist_store = Spree::Store.create! name: 'stylist-website', code: 'stylist', default: true,
+                                    domains: 'stylist.lvh.me:3000'
   
 if Rails.env == "staging" or Rails.env == "production"
   customer_store.domains = 'www.customer-peach.openjaf.com'
-  seller_store.domains = 'stage.peachunderneath.com'  
+  stylist_store.domains = 'stage.peachunderneath.com'  
 end
 
 customer_store.save
-seller_store.save
+stylist_store.save
 
 Spree::Product.all.each do |p|
-  p.stores << [customer_store, seller_store]
+  p.stores << [customer_store, stylist_store]
   p.save
 end
