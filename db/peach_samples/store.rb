@@ -5,7 +5,7 @@ customer_store = Spree::Store.create! name: 'customer-website', code: 'customer'
 seller_store = Spree::Store.create! name: 'seller-website', code: 'seller', default: false,
                                     domains: 'seller.lvh.me:3000'
   
-if Rails.env == "staging" of Rails.env == "production"
+if Rails.env == "staging" or Rails.env == "production"
   customer_store.domains = 'www.customer-peach.openjaf.com'
   seller_store.domains = 'stage.peachunderneath.com'  
 end
