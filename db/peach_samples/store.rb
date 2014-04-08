@@ -7,7 +7,7 @@ stylist_store = Spree::Store.create! name: 'stylist-website', code: 'stylist', d
   
 if Rails.env == "staging" or Rails.env == "production"
   customer_store.domains = 'www.customer-peach.openjaf.com'
-  stylist_store.domains = 'stage.peachunderneath.com'  
+  stylist_store.domains = 'peach-ecom-development.herokuapp.com'  
 end
 
 customer_store.save
