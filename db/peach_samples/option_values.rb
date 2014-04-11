@@ -1,9 +1,9 @@
-Spree::PeachSample.load_peach_sample("option_types")
-
 size = Spree::OptionType.find_by_presentation!("Size")
 color = Spree::OptionType.find_by_presentation!("Color")
 
-Spree::OptionValue.create!([
+Spree::OptionValue.delete_all
+
+option_values = [
   {
     :name => "XS",
     :presentation => "XS",
@@ -94,4 +94,12 @@ Spree::OptionValue.create!([
     :position => 9,
     :option_type => color
   }
-])
+]
+
+option_values.each do |option_value_attrs|
+  name = option_value_attrs[:name]
+  option_value = Spree::OptionValue.find_by_name(name) || Spree::OptionValue.new(:name => name)
+  option_value.update_attributes! option_value_attrs
+end
+
+

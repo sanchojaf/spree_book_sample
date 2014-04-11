@@ -15,6 +15,7 @@ module SpreePeachSample
 
       Spree::PeachSample.load_peach_sample("products")
       Spree::PeachSample.load_peach_sample("taxons")
+      Spree::PeachSample.load_peach_sample("option_types")
       Spree::PeachSample.load_peach_sample("option_values")
       Spree::PeachSample.load_peach_sample("product_option_types")
      # Spree::PeachSample.load_peach_sample("product_properties")
