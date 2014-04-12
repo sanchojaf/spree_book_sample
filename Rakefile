@@ -5,7 +5,7 @@ require 'rubygems/package_task'
 require 'rspec/core/rake_task'
 require 'spree/testing_support/common_rake'
 
-spec = eval(File.read('spree_peach_sample.gemspec'))
+spec = eval(File.read('spree_book_sample.gemspec'))
 
 Gem::PackageTask.new(spec) do |p|
   p.gem_spec = spec
@@ -14,7 +14,7 @@ end
 desc "Release to gemcutter"
 task :release do
   version = File.read(File.expand_path("../SPREE_VERSION", __FILE__)).strip
-  cmd = "cd pkg && gem push spree_peach_sample-#{version}.gem"; puts cmd; system cmd
+  cmd = "cd pkg && gem push spree_book_sample-#{version}.gem"; puts cmd; system cmd
 end
 
 desc "Generates a dummy app for testing"
