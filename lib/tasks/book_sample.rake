@@ -17,7 +17,7 @@ namespace :spree_book_sample do
       exit(1)
     end
 
-    SpreeBookSample::Engine.load__samples
+    SpreeBookSample::Engine.load_book_samples
   end
 end
 
