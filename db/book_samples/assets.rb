@@ -1,5 +1,5 @@
-Spree::Sample.load_sample("products")
-Spree::Sample.load_sample("variants")
+#Spree::Sample.load_sample("products")
+#Spree::Sample.load_sample("variants")
 
 products = {}
 products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey") 
