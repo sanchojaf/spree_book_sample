@@ -1,4 +1,4 @@
-Spree::Sample.load_sample("variants")
+#Spree::Sample.load_sample("variants")
 
 location = Spree::StockLocation.first_or_create! name: 'default'
 location.active = true
